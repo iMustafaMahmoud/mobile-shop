@@ -14,10 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## Description
-
-Mobile Shop App is and application which make you search for the mobile phone you want and you can add new mobile phone, Also it is displaying charts for some mobile information like (Year vs Mobile Count) and (Brand vs Mobile Count). Redux is used to manage the state and material-ui for the design.
-
 ## Project Description
 
 Mobile Shop App is and application which make you search for the mobile phone you want and you can add new mobile phone, Also it is displaying charts for some mobile information like (Year vs Mobile Count) and (Brand vs Mobile Count). Redux is used to manage the state and material-ui for the design.
