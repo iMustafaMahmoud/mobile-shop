@@ -16,4 +16,13 @@ You will also see any lint errors in the console.
 
 ## Description
 
-Mobile Shop App is and application which make you search for the mobile phone you want and you can add new mobile phone, Also it is displaying charts for some mobile information like (Year vs Mobile Count) and (Brand vs Mobile Count). Redux is used manage the state and material-ui for the design.
+Mobile Shop App is and application which make you search for the mobile phone you want and you can add new mobile phone, Also it is displaying charts for some mobile information like (Year vs Mobile Count) and (Brand vs Mobile Count). Redux is used to manage the state and material-ui for the design.
+
+## Project Description
+
+Mobile Shop App is and application which make you search for the mobile phone you want and you can add new mobile phone, Also it is displaying charts for some mobile information like (Year vs Mobile Count) and (Brand vs Mobile Count). Redux is used to manage the state and material-ui for the design.
+
+## About Me
+
+I'm Mustafa Mahmoud a junior MERN Stack Developer, Please check all my GitHub repositories to know my previous work.
+
