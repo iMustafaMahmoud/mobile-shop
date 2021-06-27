@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { removeProductFromBasket } from "./components/actions/shopActions";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 export function Basket({ onRemove }) {
   const { products } = useSelector((state) => state.basket);

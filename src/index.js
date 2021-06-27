@@ -1,7 +1,7 @@
 import { combineReducers, createStore } from "redux";
 import React from "react";
 import ReactDOM from "react-dom";
-import { connect, Provider, useSelector } from "react-redux";
+import { connect, Provider } from "react-redux";
 
 import basketReducer from "./components/reducers/shop";
 import Basket from "./Basket";
