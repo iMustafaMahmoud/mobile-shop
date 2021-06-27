@@ -1,15 +1,46 @@
+import { combineReducers, createStore } from "redux";
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import Reducer from "./components/reducers/mobileReducer";
-import App from "./app";
+import { connect, Provider, useSelector } from "react-redux";
 
-const store = createStore(Reducer);
+import basketReducer from "./components/reducers/shop";
+import Basket from "./Basket";
+import { addProductToBasket } from "./components/actions/shopActions";
+
+const rootReducer = combineReducers({
+  basket: basketReducer,
+});
+
+const store = createStore(rootReducer);
+
+function getSampleProduct() {
+  return {
+    id: Math.floor(Math.random() * 5),
+    name: "product 1",
+    quantity: 1,
+    price: 1.0,
+  };
+}
+
+function AddProductComponent({ addProduct }) {
+  return (
+    <button onClick={() => addProduct(getSampleProduct())}>
+      Add product to basket
+    </button>
+  );
+}
+
+const AddProduct = connect(null, (dispatch) => ({
+  addProduct: (product) => dispatch(addProductToBasket(product)),
+}))(AddProductComponent);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Basket />
+
+    <div id="utils">
+      <AddProduct />
+    </div>
   </Provider>,
   document.getElementById("root")
 );
